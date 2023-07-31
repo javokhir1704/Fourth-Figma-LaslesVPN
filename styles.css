@@ -1,0 +1,653 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  text-decoration:none;
+    list-style:none; /*Romoves the dots of list*/
+    font-family: 'Roboto', sans-serif;
+    color: #4F5665;
+
+}
+
+/*navigation bar*/
+
+nav {
+  width:100%;
+  height:max-content;
+  height:80px;
+
+  margin-bottom:80px;
+}
+
+.container {
+  width:80%;
+  height:100%;
+  margin:0 auto;
+}
+
+.sub-container-nav {
+  width:100%;
+  height:100%;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.middle-nav ul {
+  display:flex;
+  column-gap:50px;
+
+  font-size:18px;
+  font-weight:400;
+}
+
+
+.right-nav {
+  display:flex;
+  align-items:center;
+  /* justify-content:space-evenly; */
+  column-gap:30px;
+
+  margin-right:50px;
+
+  font-size:18px;
+  font-weight:500;
+
+}
+
+.right-nav p {
+  color:black !important;
+}
+
+.right-nav button {
+  color: #F53855;
+  font-size:18px;
+  font-weight:500;  
+  border:none;
+  border:1px solid #F53855;
+  border-radius:50px;
+
+  padding:7px 20px;
+
+  background:none;
+
+}
+
+/*Header*/
+
+header {
+  width:100%;
+  height:max-content;
+
+  margin-bottom:80px;
+}
+
+.sub-container-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.sub-container-header .left-header h1 {
+ font-size:50px;
+ color:black;
+ font-weight:500;
+
+ line-height:70px;
+}
+
+.sub-container-header .left-header p {
+  font-size:18px;
+  font-weight:400;
+
+  line-height:30px;
+
+  margin:40px 0px;
+}
+
+.left-header .bold-header-h1 {
+  color:black;
+  font-weight:700;
+}
+
+.left-header .bold-text-header {
+  font-weight:500;  
+}
+
+.left-header button {
+  background-color:#F53838;
+  color:white;
+  
+  font-size:18px;
+  font-weight: 700;
+
+  border:none;
+  border-radius:10px;
+  padding:20px 85px;
+
+  box-shadow:10px 20px 50px  #F5383859;
+}
+
+/*Header footer*/
+
+.header-footer {
+  width:80%;
+  height:200px;
+  margin:0px auto;
+
+  box-shadow: 11px 32px 48px -12px rgba(34, 60, 80, 0.16);
+
+  margin-bottom:100px;
+}
+
+/*We have set styles to container div so 
+that's why we don't need to style it repeatedly,
+instead, just create it*/
+
+.header-footer .container {/*If hadn't set flex styles to container,
+  it would have been at the top of its height*/
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.specifications {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+
+  height:100%;
+}
+
+
+.user-part,
+.location-part,
+.server-part {
+  display:flex;
+  align-items:center;
+  column-gap:30px;
+  padding:0px 100px;
+
+  height:50%;
+}
+
+.location-part {
+  border-left:2px solid #EEEFF2;
+  border-right:2px solid #EEEFF2;
+}
+
+.user-part .bold-number,
+.location-part .bold-number,
+.server-part .bold-number {
+  font-size:25px;
+  font-weight:700;
+
+  color:black;
+
+}
+
+.user-part p,
+.location-part p,
+.server-part p {
+  font-size:22px;
+  font-weight:400;
+
+  margin-top: 10px;
+}
+
+
+/*Section*/
+
+section {
+  width: 100%;
+  height:max-content;
+
+  margin-bottom:100px;
+}
+
+.sub-container-section {
+  width:100%;
+  height:100%;
+
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+
+}
+
+.right-section h1 {
+  font-size:37px;
+  font-weight: 500;
+
+  color:black;
+
+  line-height:50px;
+}
+
+.right-section .features{
+  font-size:18px;
+  font-weight:400;
+
+  margin:40px 0px 30px 0px;
+}
+
+.sub-right-section-class {
+  display:flex;
+  align-items:center;
+  
+  column-gap:20px;
+
+  margin-bottom: 30px;
+}
+
+.sub-right-section-class p {
+  font-size:18px;
+  font-weight:400;
+}
+
+/*Headline*/
+
+.headline {
+  width:100%;
+  height:max-content;
+
+  text-align:center;
+
+  margin-bottom:100px;  
+  
+}
+
+.headline h1 {
+  font-size:37px;
+  font-weight: 500;
+
+  color:black;
+
+  line-height:50px;
+
+  margin-bottom:20px;
+}
+
+.headline p {
+  font-size:18px;
+  font-weight: 400;
+  line-height:40px;
+}
+
+.headline .bold-text-headline {
+  font-weight:500;
+  font-size:18px;
+
+}
+
+/*Second section part*/
+
+/*We've already set styles to section, now it's not needed*/
+/*And also container is the same as the section*/
+.sub-container-grids {
+  width:100%;
+  height:100%;
+
+  display:flex;
+  justify-content:space-between;
+  
+  /* flex-wrap: wrap;
+  do it with media query */
+
+  /* text-align:center; */
+}
+
+
+.grid {
+  border:2px solid #DDDDDD;
+  border-radius:10px;
+
+   display:flex;
+   flex-direction:column;
+   /* justify-items: center; */
+   align-items: center;
+  flex-basis:31%; /*The flex-basis property specifies the initial length of a flexible item.*/
+
+  padding:80px 30px 50px 30px;
+}
+
+
+
+.sub-grid-box { /*img and text are next to each other*/
+  display:flex;
+  align-items:center;
+  /* justify-content: center; */
+  column-gap:20px;
+  margin-bottom:30px;
+}
+
+.sub-grid {
+  height:350px;
+}
+
+
+.grid h2 {
+  font-size:20px;
+  font-weight:500;
+
+  color:black !important;
+
+  margin:50px 0px;
+}
+
+.grid p {
+  font-size:16px;
+  font-weight:400;
+
+}
+
+.grid .text {
+  font-weight: 400;
+  font-size:27px;
+
+  margin:20px 0px;
+}
+
+.grid .bold-price {
+  font-weight:500;
+  font-size:25px;
+
+  color:black !important;
+}
+
+.grid button {
+  border:none;
+  border:2px solid #F53838;
+  border-radius:50px;
+
+  font-size:18px;
+  font-weight:700;
+  
+  padding:10px 60px;
+
+  background:white;
+
+  color:#F53838;
+
+}
+
+.sub-container-grids .special-one {
+  border:2px solid #F53838;
+}
+
+.grid .special-one-button {
+  background:#F53838;
+  
+  color:white;
+
+  box-shadow:0px 10px 20px #F5383859;
+}
+
+/*Map and companies*/
+
+.map-container,
+.companies-container {
+  width:100%;
+  height:100%;
+
+}
+
+.map-container img,
+.companies-container img {
+  width:100%;
+  height:100%;
+}
+
+.map-container {
+  margin-bottom:50px;
+}
+
+
+/*Feedback boxes*/
+.left-identity,
+.right-identity {
+  display:flex;
+  align-items: center;
+  column-gap:20px;
+}
+
+.right-identity {
+  column-gap:10px !important;
+}
+
+/*Names and locations of person*/
+
+.status-of-person h1{
+  font-size:20px;
+  font-weight:500;
+
+  color:black !important;
+}
+
+.status-of-person p {
+  font-size:16px;
+  font-weight:400;
+}
+
+.right-identity p {
+  color: #0b132a !important;
+}
+
+/*Feedback text-parts*/
+.feedback-container p {
+  font-size:18px;
+  font-weight:400;
+
+  line-height:30px;
+
+  color:#0B132A;
+}
+
+.identity-box {
+  display:flex;
+  justify-content: space-between;
+
+  margin-bottom:20px; 
+}
+
+.feedback-container {  /*Main container*/
+  width:100%;
+  height:100%;
+
+  display:flex;
+  justify-content: space-between;
+
+  margin-bottom:80px;
+}
+
+.feedback-box-left,
+.feedback-box-middle,
+.feedback-box-right {
+  width:100%;
+  /* height:max-content;  */ /*If you had set it,
+  the div wouldn't have been equal with the ones that
+  are next to it, because in each div there are varius size
+  of paragraphs and other things so that's why to be equal just
+  don't set height:max-content; to it;*/
+
+  border:2px solid #DDDDDD;
+  border-radius:10px;
+
+  padding:20px;
+
+  flex-basis:32%;
+}
+
+.feedback-box-left {
+  border:2px solid #F53838 !important;
+}
+
+/*Slider*/
+
+.slider {
+  width: 100%;
+  height: 100%;
+
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.right-slider {
+  height:100%;
+
+  display:flex;
+  align-items: center;
+
+}
+
+
+/*Footer*/
+
+footer {
+  background-color:#F8F8F8;
+
+  width:100%;
+  height:600px;   
+
+  padding:100px 0px 50px 0px;
+  
+  font-size:18px;
+
+  position:relative;
+}
+
+.footer-flex-box {
+  width:100%;
+  height: 100%;
+
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.right-box {
+  display:flex;
+  /* align-items:top; */
+  column-gap:100px;
+}
+/* 
+.social-box {
+  display:flex;
+  justify-content:center;
+} */
+
+
+.sub-right-box-third {
+  margin-left:50px;
+}
+
+.bold-text-footer {
+  font-size:16px;
+  font-weight: 500;
+
+}
+
+.footer-logo,
+.left-box p {
+  margin-bottom:30px;
+}
+
+.sub-right-box-first h2,
+.sub-right-box-second h2,
+.sub-right-box-third h2 {
+  font-size:20px;
+  font-weight:500;
+
+  color: black !important;
+
+  margin-bottom:30px;
+}
+
+.sub-right-box-first p,
+.sub-right-box-second p,
+.sub-right-box-third p {
+  margin-bottom:15px;
+}
+
+.left-box,
+.right-box { /*If you miss the width and height,
+  the content can be not equal with other divs or
+  appear some bugs. That's why make sure
+  that you set a width:100%; and height:100%;
+  which means this div takes up the entire space
+  of its parent div*/
+  width:100%; 
+  height:275px;
+}
+
+.position-absolute {
+  width: 100%;
+  height:240px;
+
+  position:absolute; /*Be careful when you're
+  inserting position:absolute to position:relative
+  because the absolute element should be inside 
+  of relative element otherwise the position property will
+  not effect to them */
+  top:-130px;
+
+}
+
+.flex-position {
+  width:100%;
+  height:100%;
+
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 10px;
+
+  padding:80px;
+
+  background-color: white;
+
+  box-shadow: 5px 10px 10px rgba(111, 111, 111, 0.1);
+}
+
+.flex-position button {
+  background-color:#F53838;
+  color:white;
+  
+  font-size:18px;
+  font-weight: 700;
+
+  border:none;
+  border-radius:10px;
+  padding:20px 85px;
+
+  box-shadow:10px 20px 50px  #F5383859;
+}
+
+.left-part-position h1 {
+  font-size:37px;
+  font-weight:500;
+
+  line-height:35px;
+
+  color:black !important;
+
+  margin-bottom:20px;
+}
+
+.left-part-position p {
+  font-size:18px;
+  font-weight:400;
+}
+
+
+
+
+
+
+
+
+
+
